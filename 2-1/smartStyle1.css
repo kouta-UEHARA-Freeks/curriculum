@@ -1,0 +1,48 @@
+/* 【ウィンドウ幅が767pxまでの場合】
+・headerの横幅を250pxにする
+・rightの横幅を100pxにする
+・footerの横幅を250pxにする */
+@media screen and (max-width: 767px) {
+    .header {
+        width: 250px;
+    }
+
+    /* 個人メモ：やはりここもmargin: auto;(中央寄せ)をするために横幅指定 */
+    .main {
+        width: 250px;
+    }
+
+    .main-right {
+        width: 100px;
+    }
+
+    .footer {
+        width: 250px;
+    }
+}
+ 
+/* 【ウィンドウ幅が479pxまでの場合】
+・headerの横幅を150pxにする
+・rightの横幅を150pxにする
+・footerの横幅を150pxにする
+・要素の浮動化(float)の解除 */
+@media screen and (max-width: 479px) {
+    .header {
+        width: 150px;
+    }
+
+    /* 個人メモ：floatの解除は親からやれば一気にできる */
+    .main {
+        width: 150px;
+        float: none;
+    }
+
+    .main-right {
+        width: 150px;
+    }
+
+    .footer {
+        width: 150px;
+    }
+}
+
