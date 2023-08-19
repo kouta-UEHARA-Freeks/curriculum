@@ -10,18 +10,16 @@ public class Main {
     
     //課題②
     private void printName(String lastName, String firstName) {
-        this.lastName = lastName;
+        this.lastName =lastName;
         this.firstName = firstName;
-        
-        System.out.println("prinNameメソッド → " + this.lastName + this.firstName);
+        System.out.println("printNameメソッド → " + lastName + firstName);
     }
-    
-    
-    public static void main(String[] args) {
+
+      public static void main(String[] args) {
 
        Main main = new Main();
-       main.printName("上原", "孝太");
-       
+       main.printName(main.lastName, main.firstName);
+
        Pet pet = new Pet(Constants.CHECK_CLASS_JAVA, Constants.CHECK_CLASS_HOGE);
        pet.introduce();
 
